@@ -16,7 +16,7 @@ public class Pedido {
     }
 
     public void imprimir(){
-        System.out.printf("Livro: %s | Multa por %s dias de atraso: R$ %.2f\n ",titulo,diasAtraso,multaAtraso());
+        System.out.printf("Livro: %s | Multa por %s dias de atraso: -R$ %.2f\n ",titulo,diasAtraso,multaAtraso());
     }
 
 
