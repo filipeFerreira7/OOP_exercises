@@ -1,6 +1,6 @@
 # 💡 Exemplos de Programação Orientada a Objetos em Java
 
-Este projeto contém **exemplos práticos de Programação Orientada a Objetos (POO)** aplicados a contextos do mundo real, como **contas bancárias**, **sistemas de pedidos** e **hierarquias de animais**. Ideal para quem está aprendendo os fundamentos de OOP em Java e deseja visualizar a aplicação em cenários cotidianos.
+Este projeto contém **exemplos práticos de Programação Orientada a Objetos (POO)**, **Collections e Streams** aplicados a contextos do mundo real, como **contas bancárias**, **sistemas de pedidos** e **hierarquias de animais**. Ideal para quem está aprendendo os fundamentos de OOP em Java e deseja visualizar a aplicação em cenários cotidianos.
 
 ---
 
