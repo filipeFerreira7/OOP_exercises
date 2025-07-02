@@ -94,7 +94,7 @@ public class Main {
 
 
         List<Double> notas = List.of(7.5,8.0,6.5,9.0,10.0);
-        double mediaNotas = notas.stream().map(v -> v/notas.size()).reduce(0.0, Double::sum);
+        double mediaNotas = notas.stream().mapToDouble(Double::doubleValue).average().orElse(0.0);
         double menorNota = notas.stream().min(Double::compare).get();
         double maiorNota = notas.stream().max(Double::compare).get();
 
