@@ -104,6 +104,19 @@ public class Main {
 
 
 
+        List<List<Integer>> fluxosNumeros = Arrays.asList(
+          Arrays.asList(8,9,10),
+          Arrays.asList(2,3,4,1),
+          Arrays.asList(5,6,7),
+          Arrays.asList(11,2)
+        );
+        List<Integer> allInOne = fluxosNumeros.stream()
+                .flatMap(List::stream).distinct().sorted().collect(Collectors.toList());
+
+        System.out.println(allInOne);
+
+
+
 
     }
 }
