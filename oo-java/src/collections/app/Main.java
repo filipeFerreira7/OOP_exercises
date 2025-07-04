@@ -1,5 +1,8 @@
 package collections.app;
 
+import collections.model.Produtos;
+import model.Produto;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -114,6 +117,27 @@ public class Main {
                 .flatMap(List::stream).distinct().sorted().collect(Collectors.toList());
 
         System.out.println(allInOne);
+
+
+        List<Produtos> produtos = new ArrayList<>();
+        produtos.add(new Produtos(1,"Playstation 5", 3000.0));
+        produtos.add(new Produtos(2, "Xbox One Series X", 4500.0));
+        produtos.add(new Produtos(3, "Nintendo Switch 2", 8000.0));
+        produtos.add(new Produtos(4, "Atari", 8000.0));
+
+        double tax = 1.08;
+
+        produtos.stream().forEach(produto -> {
+            produto.preco *= tax;
+        });
+        System.out.println("Lista antes de ordenar: ");
+        produtos.forEach(System.out::println);
+        produtos.sort((o1, o2) -> o1.getNome().compareToIgnoreCase(o2.getNome()));
+
+        System.out.println("Lista pós ordenação: ");
+        produtos.forEach(System.out::println);
+
+
 
 
 
